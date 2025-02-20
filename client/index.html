@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Form Submit</title>
-    <link rel="styles" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,39 +15,42 @@
     <main>
         <section class="Simple_Form">
 
-            <form action="/submit" method="POST" class="Form_1">
+            <div class="Submit_Form">
+                <form action="/submit" method="POST" class="Form_1">
 
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" required>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="dob">Date of Birth: </label>
-                <input type="date" id="dob" name="dob" required>
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" id="dob" name="dob" required>
 
-                <label for="Gender">Gender: </label>
+                    <label for="Gender">Gender: </label>
 
-                <div class="Radio_Form">
+                    <div class="Radio_Form">
 
-                    <input type="radio" id="male" name="gender">
-                    <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
 
-                    <input type="radio" id="female" name="gender">
-                    <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
 
-                    <input type="raido" id="other" name="gender">
-                    <label for="other">Other</label>
+                        <input type="radio" id="other" name="gender">
+                        <label for="other">Other</label>
 
-                </div>
+                    </div>
 
-                <label for="description">Description: </label>
-                <textarea id="description" name="description" cols="60"></textarea>
+                    <label for="description">Description: </label>
+                    <textarea id="description" name="description" cols="60"></textarea>
 
 
-                <button type="submit" class="Submit_Button">Submit</button>
+                    <button type="submit" class="Submit_Button">Submit</button>
 
-            </form>
+                </form>
+
+            </div>
         </section>
 
 

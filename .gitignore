@@ -1,0 +1,39 @@
+# 🛑 Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn.lock
+package-lock.json
+
+# 🔒 Environment Variables (Secrets)
+.env
+
+# 🗑 Logs & Temp Files
+logs/
+*.log
+debug.log
+error.log
+*.pid
+*.seed
+
+# 🚀 Build Files & Static Output
+dist/
+build/
+
+# 📂 IDE & System Files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# 💾 MySQL Data Dumps & Backups
+*.sql
+*.sqlite
+*.db
+
+# 📂 Uploaded Files (User-Uploaded Content)
+server/uploads/
+
+# 📂 Cache & Temporary Files
+.cache/
+tmp/
+temp/
