@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Submit</title>
+    <link rel="styles" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2>Form Submit Practice</h2>
+        <!-- nav bar would go here -->
+    </header>
+
+    <main>
+        <section class="Simple_Form">
+
+            <form action="/submit" method="POST" class="Form_1">
+
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="Gender">Gender: </label>
+
+                <div class="Radio_Form">
+
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+
+                    <input type="raido" id="other" name="gender">
+                    <label for="other">Other</label>
+
+                </div>
+
+                <label for="description">Description: </label>
+                <textarea id="description" name="description" cols="60"></textarea>
+
+
+                <button type="submit" class="Submit_Button">Submit</button>
+
+            </form>
+        </section>
+
+
+
+    </main>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
