@@ -21,7 +21,7 @@ app.post("/submit", async (req, res) => {
             [name, email, dob, gender, description]
         );
 
-        res.json({ success: true, message: "Form ${id} submittied succesfully"});
+        res.json({ success: true, message: "Form submittied succesfully"});
     } catch (err) {
         console.error(err);
         res.status(500).json({success:false, message: "Error submitting"});
