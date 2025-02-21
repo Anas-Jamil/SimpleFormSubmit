@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".Form_1");
 
     form.addEventListener("submit", async function (event) {
-        event.preventDefault(); // Prevents page reload
+        event.preventDefault(); 
 
-        // Correct form data collection
+  
         const formData = {
             name: document.getElementById("name").value,
             email: document.getElementById("email").value,
@@ -13,10 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             description: document.getElementById("description").value
         };
 
-        // Debugging: Check if gender is correctly captured
-        console.log("Selected gender:", formData.gender);
 
-        // Ensure all required fields are filled
         if (!formData.name || !formData.email || !formData.dob || !formData.gender) {
             alert("Please fill out all required fields.");
             return;
@@ -30,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             const result = await response.json();
-            alert(result.message); // Show success message
+            alert(result.message);
 
             if (result.success) {
-                form.reset(); // Reset the form after successful submission
+                form.reset(); 
             }
         } catch (error) {
             console.error("Error submitting form:", error);
